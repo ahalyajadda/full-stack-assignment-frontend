@@ -26,7 +26,7 @@ function App() {
   const fetchData = async (page, data) => {
     try {
       const response = await axios.get(
-        `http://localhost:3030/?page=${page}&limit=${limit}`
+        `https://internship-fullstack.onrender.com/?page=${page}&limit=${limit}`
       );
       //adding paginatedWeatherResults to the data array.
       const cityinfo = await response.data;
